@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gusto</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Rochester&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+      html {
+        scroll-behavior: smooth;
+        scroll-padding-top: 100px;
+      }
+    </style>
+  </head>
+  <body>
+    <input type="checkbox" id="menu-toggle" hidden />
+    <nav>
+      <div class="logo"></div>
+    
+      <!-- DESKTOP NAV LINKS -->
+      <div class="desktop-nav">
+      <a href="#specials" class="nav-link">SPECIALS</a>
+      <a href="#about" class="nav-link">ABOUT</a>
+      <a href="#menu" class="nav-link">MENU</a>
+      <a href="#chef" class="nav-link">CHEF</a>
+      <a href="#contact" class="nav-link">CONTACT</a>
+      </div>
+      <!-- MOBILE NAV LINKS -->
+      <div class="nav-links">
+        <a href="#specials" class="nav-link" onclick="document.getElementById('menu-toggle').checked = false;">SPECIALS</a>
+        <a href="#about" class="nav-link" onclick="document.getElementById('menu-toggle').checked = false;">ABOUT</a>
+        <a href="#menu" class="nav-link" onclick="document.getElementById('menu-toggle').checked = false;">MENU</a>
+        <a href="#chef" class="nav-link" onclick="document.getElementById('menu-toggle').checked = false;">CHEF</a>
+        <a href="#contact" class="nav-link" onclick="document.getElementById('menu-toggle').checked = false;">CONTACT</a>
+      </div>
+    
+      <!-- Hamburger icon -->
+      <label for="menu-toggle" class="menu-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <line x1="4" x2="20" y1="12" y2="12" />
+          <line x1="4" x2="20" y1="6" y2="6" />
+          <line x1="4" x2="20" y1="18" y2="18" />
+        </svg>
+      </label>
+    </nav>
+    
+
+    <div class="hero-section">
+      <div>
+        <h1>Gusto</h1>
+        <p>Reservations: (887) 654-3210</p>
+      </div>
+    </div>
+
+    <section class="specials-section" id="specials">
+      <div class="specials-section-top">
+        <h1>OUR SPECIALS</h1>
+        <div></div>
+      </div>
+
+      <div class="specials-section-bottom">
+        <div class="card">
+          <h1>Lorem ipsum dolor</h1>
+          <img src="images/1.jpg" alt="image-1" />
+          <p class="card-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sed commodo.</p>
+        </div>
+        <div class="card">
+          <h1>Consectetur adipiscing</h1>
+          <img src="images/2.jpg" alt="image-2" />
+          <p class="card-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sed commodo.</p>
+        </div>
+        <div class="card">
+          <h1>Duis sed dapibus</h1>
+          <img src="images/3.jpg" alt="image-3" />
+          <p class="card-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sed commodo.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="story-section" id="about">
+      <div class="story-container">
+        <div class="story-image">
+          <img src="images/gallery-bg.jpg" alt="Restaurant Story">
+        </div>
+        <div class="story-content">
+          <h1>OUR STORY</h1>
+          <div class="story-underline"></div>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam. Sed commodo nibh ante facilisis bibendum dolor feugiat at. Duis sed dapibus leo nec ornare diam commodo nibh.</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam. Sed commodo nibh ante facilisis bibendum dolor feugiat at. Duis sed dapibus leo nec ornare.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="menu-section" id="menu">
+      <h1 class="menu-title">MENU</h1>
+      <div class="menu-underline"></div>
+      <div class="menu-categories">
+        <div class="menu-category">
+          <h2>BREAKFAST & STARTERS</h2>
+          <div class="category-underline"></div>
+          <div class="menu-items">
+            <div class="menu-item"><span>Tortellini Skewers</span><span class="menu-price">$9</span></div>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam.</p>
+            <div class="menu-item"><span>Fried Ravioli</span><span class="menu-price">$7</span></div>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam.</p>
+            <div class="menu-item"><span>Wild Mushroom Arancini</span><span class="menu-price">$9</span></div>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam.</p>
+            <div class="menu-item"><span>Mozzarella Sticks</span><span class="menu-price">$10</span></div>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam.</p>
+          </div>
+        </div>
+
+        <div class="menu-category">
+          <h2>MAIN COURSE</h2>
+          <div class="category-underline"></div>
+          <div class="menu-items">
+            <div class="menu-item"><span>Roast Stuffed Chicken</span><span class="menu-price">$18</span></div>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam.</p>
+            <div class="menu-item"><span>Chicken & Mushroom Pasta</span><span class="menu-price">$20</span></div>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam.</p>
+            <div class="menu-item"><span>Beef Lasagne</span><span class="menu-price">$14</span></div>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam.</p>
+            <div class="menu-item"><span>Chicken Goujons</span><span class="menu-price">$19</span></div>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam.</p>
+          </div>
+        </div>
+
+        <div class="menu-category">
+          <h2>DINNER</h2>
+          <div class="category-underline"></div>
+          <div class="menu-items">
+            <div class="menu-item"><span>Sesame-Ginger Beef</span><span class="menu-price">$15</span></div>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam.</p>
+            <div class="menu-item"><span>Crispy Fried Chicken</span><span class="menu-price">$17</span></div>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam.</p>
+            <div class="menu-item"><span>Mongolian Shrimp & Broccoli</span><span class="menu-price">$18</span></div>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam.</p>
+            <div class="menu-item"><span>Spicy Coconut Salmon</span><span class="menu-price">$20</span></div>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam.</p>
+          </div>
+        </div>
+
+        <div class="menu-category">
+          <h2>DESSERTS</h2>
+          <div class="category-underline"></div>
+          <div class="menu-items">
+            <div class="menu-item"><span>Chocolate Mud Cake</span><span class="menu-price">$11</span></div>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam.</p>
+            <div class="menu-item"><span>Bourbon-Pecan Tart</span><span class="menu-price">$14</span></div>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam.</p>
+            <div class="menu-item"><span>Texas Sheet Cake</span><span class="menu-price">$15</span></div>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam.</p>
+            <div class="menu-item"><span>Vanilla Cheesecake</span><span class="menu-price">$18</span></div>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="menu-images-section">
+      <div class="menu-gallery">
+        <img src="images/4.jpg" alt="Delicious Food">
+        <img src="images/5.jpg" alt="Gourmet Dish">
+        <img src="images/03.jpg" alt="Sushi Platter">
+        <img src="images/04.jpg" alt="Pasta Bowl">
+      </div>
+    </section>
+
+    <section class="our-chef-section" id="chef">
+      <div class="chef-container">
+        <div class="chef-text">
+          <h1>MEET OUR CHEF</h1>
+          <div class="chef-underline"></div>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam. Sed commodo nibh ante facilisis bibendum dolor feugiat at. Duis sed dapibus leo nec ornare diam commodo nibh.</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam. Sed commodo nibh ante facilisis bibendum dolor feugiat at. Duis sed dapibus leo nec ornare diam commodo nibh.</p>
+        </div>
+        <div class="chef-image">
+          <img src="images/chef.jpg" alt="Our Chef">
+        </div>
+      </div>
+    </section>
+
+    <section class="contact-us-section" id="contact">
+      <div class="contact-container">
+        <div class="contact-info">
+          <div class="contact-column">
+            <h3>RESERVATIONS</h3>
+            <div class="underline"></div>
+            <p>Please call</p>
+            <p>(887) 654-3210</p>
+          </div>
+          <div class="contact-column">
+            <h3>ADDRESS</h3>
+            <div class="underline"></div>
+            <p>4321 California St,</p>
+            <p>San Francisco, CA 12345</p>
+          </div>
+          <div class="contact-column">
+            <h3>OPENING HOURS</h3>
+            <div class="underline"></div>
+            <p>Mon-Thurs: 10:00 AM - 11:00 PM</p>
+            <p>Fri-Sun: 11:00 AM - 02:00 AM</p>
+          </div>
+        </div>
+        <div class="contact-form">
+          <h3>SEND US A MESSAGE</h3>
+          <div class="underline"></div>
+          <form>
+            <div class="input-row">
+              <input type="text" placeholder="Name" required>
+              <input type="email" placeholder="Email" required>
+            </div>
+            <textarea placeholder="Message" required></textarea>
+            <button type="submit">SEND MESSAGE</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer-section">
+      <p>© 2017 Gusto. All rights reserved. Design by <a href="#">TemplateWire</a></p>
+      <div class="social-icons">
+        <a href="#" target="_blank"><i class="fab fa-facebook-f"></i></a>
+        <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+        <a href="#" target="_blank"><i class="fab fa-youtube"></i></a>
+      </div>
+    </footer>
+  </body>
+</html>
